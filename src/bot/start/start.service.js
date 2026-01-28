@@ -15,3 +15,4 @@ export const setPhone = async (chatId, phone) => {
   );
   return newPhone;
 };
+

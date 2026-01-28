@@ -11,6 +11,11 @@ const userSchema = new mongoose.Schema({
   contact: {
     type: String,
   },
+  role:{
+    type:String,
+    enum:['SUPERADMIN','ADMIN','USER'],
+    default:"USER"
+  }
 });
 
 export const userModel = mongoose.model("User", userSchema);
